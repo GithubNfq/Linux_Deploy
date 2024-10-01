@@ -8,7 +8,7 @@ Presionamos la tecla de Menu/Windows y escribimos terminal.
 ~~~
 mkdir deploy && \
 cd deploy && \
-wget programs.list https://raw.githubusercontent.com/GithubNfq/linux_deploy/refs/heads/main/programs.list && \
+wget https://raw.githubusercontent.com/GithubNfq/linux_deploy/refs/heads/main/programs.list && \
 wget https://raw.githubusercontent.com/GithubNfq/linux_deploy/refs/heads/main/start.sh && \
 wget https://raw.githubusercontent.com/GithubNfq/linux_deploy/refs/heads/main/tools.sh && \
 sudo chmod +x ./* && \
