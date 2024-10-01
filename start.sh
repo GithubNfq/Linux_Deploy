@@ -5,6 +5,6 @@ source $actual_Dir/tools.sh
 
 # Variables
 declare -a programas
-mapfile -t programas < $actual_Dir/programas.txt
+mapfile -t programas < $actual_Dir/programs.list
 
 install_programs ${programas[@],,} # ${programas[@],,} convierte a minúsculas
