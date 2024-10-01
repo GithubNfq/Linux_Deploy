@@ -12,7 +12,6 @@ wget https://raw.githubusercontent.com/GithubNfq/linux_deploy/refs/heads/main/pr
 wget https://raw.githubusercontent.com/GithubNfq/linux_deploy/refs/heads/main/start.sh && \
 wget https://raw.githubusercontent.com/GithubNfq/linux_deploy/refs/heads/main/tools.sh && \
 sudo chmod +x ./* && \
-echo -e "\e[1m\e[32mTodo se ha descargado de forma correcta\e[0m" && \
 ./start.sh
 ~~~
 #### Una vez lo tenemos hemos pegado presionamos ***\"ENTER\"***
