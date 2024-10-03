@@ -75,6 +75,8 @@ function install_programs(){
                     install_docker
                 elif [[ "${faltantes[$i],,}" == "postgres" ]]; then
                     install_postgresql
+                elif [[ "${faltantes[$i],,}" == "ping" ]]; then
+                    install_ping
                 elif [[ $i -ge 0 ]] && [[ $i -lt ${#faltantes[@]} ]]; then
                     mensajes "info_b" "Instalando: $(mensajes "grey_b" "${faltantes[$i]}")"
                     sudo apt-get install -y ${faltantes[$i]}
@@ -121,5 +123,10 @@ function install_docker(){
 
 function install_postgresql(){
     sudo apt-get install -y postgresql postgresql-contrib && \
+    return 0
+}
+
+function install_ping(){
+    sudo apt-get install -y iputils-ping && \
     return 0
 }
