@@ -8,3 +8,4 @@ nginx
 mysql-server
 postgresql
 php
+iputils-ping
