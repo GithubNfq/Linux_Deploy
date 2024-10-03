@@ -72,7 +72,8 @@ function install_programs(){
         if [[ $respuesta != "" ]]; then
             for i in $(echo $respuesta | tr "," "\n"); do
                 if [[ "${faltantes[$i],,}" == "docker" ]]; then
-                    install_docker
+                    install_docker && \
+                    sudo usermod -aG docker itnfq
                 elif [[ "${faltantes[$i],,}" == "postgres" ]]; then
                     install_postgresql
                 elif [[ "${faltantes[$i],,}" == "ping" ]]; then
