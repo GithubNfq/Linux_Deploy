@@ -1,4 +1,5 @@
 #!/bin/bash
+#Autor Carlos Ferreiro
 function mensajes(){
     case $1 in
         "error")
