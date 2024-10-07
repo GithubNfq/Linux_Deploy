@@ -1,4 +1,5 @@
-#!/bin/bash +x
+#!/bin/bash
+#Autor Carlos Ferreiro
 actual_Dir=$(dirname $0)
 #Importar funciones
 source $actual_Dir/tools.sh
